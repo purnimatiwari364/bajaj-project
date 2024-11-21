@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter API Response</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="jsonInput">API Input:</label>
+    <input type="text" id="jsonInput" placeholder='{"data":["M","1","334","4","B"]}'>
+    <button id="submitButton">Submit</button>
+
+    <label for="filterDropdown">Multi Filter:</label>
+    <select id="filterDropdown">
+        <option value="" disabled selected>Select Filter</option>
+        <option value="numbers">Numbers</option>
+        <option value="alphabets">Alphabets</option>
+        <option value="highestLowercase">Highest Lowercase Alphabet</option>
+    </select>
+
+    <div id="output"></div>
+</body>
+<script src="script.js"></script>
+</html>
